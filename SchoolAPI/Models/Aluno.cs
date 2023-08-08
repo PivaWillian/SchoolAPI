@@ -1,4 +1,5 @@
 ﻿using System.Security.Cryptography.X509Certificates;
+using SchoolAPI.DTO;
 
 namespace SchoolAPI.Models
 {

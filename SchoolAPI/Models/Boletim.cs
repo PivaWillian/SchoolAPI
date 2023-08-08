@@ -1,4 +1,6 @@
-﻿namespace SchoolAPI.Models
+﻿using SchoolAPI.DTO;
+
+namespace SchoolAPI.Models
 {
     public class Boletim
     {
