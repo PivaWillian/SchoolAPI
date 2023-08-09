@@ -7,6 +7,9 @@ namespace SchoolAPI.DataBase
     {
         public DbSet<Aluno> Alunos { get; set; }
         public DbSet<Turma> Turmas { get; set;}
+        public DbSet<Boletim> Boletins { get; set; }
+        public DbSet<Materia> Materias { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -24,7 +27,7 @@ namespace SchoolAPI.DataBase
                                         .HasColumnName("PK_ID")
                                         .HasColumnType("INTEGER");
 
-            modelBuilder.Entity<Aluno>().Property(x => x.Name)
+            modelBuilder.Entity<Aluno>().Property(x => x.Nome)
                                         .IsRequired()
                                         .HasColumnName("NOME")
                                         .HasColumnType("VARCHAR")

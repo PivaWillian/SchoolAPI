@@ -6,7 +6,7 @@ namespace SchoolAPI.Models
     public class Aluno
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Nome { get; set; }
         public string SobreNome { get; set; }
         public int Idade { get; set; }
         public string Genero { get; set; }
@@ -24,7 +24,7 @@ namespace SchoolAPI.Models
         public Aluno(AlunoDTO aluno)
         {
             Id = aluno.Id;
-            Name = aluno.Name;
+            Nome = aluno.Nome;
             SobreNome = aluno.SobreNome;
             Idade = aluno.Idade;
             Genero = aluno.Genero;
@@ -44,7 +44,7 @@ namespace SchoolAPI.Models
 
         public void Update(Aluno aluno)
         {
-            Name = aluno.Name;
+            Nome = aluno.Nome;
             SobreNome = aluno.SobreNome;
             Idade = aluno.Idade;
             Genero = aluno.Genero;

@@ -5,7 +5,7 @@ namespace SchoolAPI.DTO
     public class AlunoDTO
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Nome { get; set; }
         public string SobreNome { get; set; }
         public int Idade { get; set; }
         public string Genero { get; set; }
@@ -21,7 +21,7 @@ namespace SchoolAPI.DTO
         public AlunoDTO(Aluno aluno)
         {
             Id = aluno.Id;
-            Name = aluno.Name;
+            Nome = aluno.Name;
             SobreNome = aluno.SobreNome;
             Idade = aluno.Idade;
             Genero = aluno.Genero;
